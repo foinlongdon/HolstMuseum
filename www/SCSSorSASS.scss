@@ -1,0 +1,41 @@
+/* Scss Document */
+/* Css Document */
+
+@import "partials/_globals.scss";
+
+$brandColor: #FF0000;
+$font: "Arial";
+
+
+@mixin padding( $amount: 10px, $borderColor: blue ) {
+  
+  padding: $amount;
+  border-left: $borderColor 3px solid;
+  
+}
+
+
+@mixin link-decoration {
+  text-decoration: none;
+  @include padding (50px);
+}
+
+a.brand {
+  font-family: $font;
+  color: $brandColor;
+  @include link-decoration;
+
+    &:hover {
+      
+      color: #AA77BC;
+      
+    }
+
+
+  &:active {
+      
+      color: #774B00;
+      
+    }
+
+}

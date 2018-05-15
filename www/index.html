@@ -1,60 +1,557 @@
-<!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
+<!doctype html>
 <html>
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
-        * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
-    -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+<meta charset="utf-8">
+<title>Holst Museum Cheltenham</title>
+<link rel="icon" href="IMG/HolstLogo.png">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
+<link rel="stylesheet" href="themes/themetest1.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="SCSSorSASS.scss" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="animate.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 </head>
 
 <body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
-    </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
+	
+<!-- Start of My Profile page -->
+<div data-role="page" class="header" id="myProfile" data-theme="b">
+
+	<div data-role="header">
+	<img src="IMG/HolstLogowhitetheme.png" class="holstlogo fadeInDown animated" width="100%">
+		<h1>Home</h1>
+	</div><!-- /header -->
+    
+   <br> <center><img src="IMG/Holst.png" class="holstportrait" width="70%"></center>
+
+	<div role="main" class="ui-content">
+		<div data-role="collapsible" id="collapsPersoInfo">
+			<h4>About Holst</h4>
+			<h5>Gustav Theodore Holst was an English composer and teacher most famously known for composing 'The Planets'. Holst was born to Adolph von Holst, a professional musician, and his wife, Clara Cox on 21 September 1874 at 4 Pittville Terrace and passed away 25 May 1934. Other works by Holst include Beni Mora Suite, Reviving Purcell and Written in the stars.</h5>
+		</div>
+
+	</div><!-- /content -->
+
+	<div data-role="footer">
+        <h1>Created by Group 3 - Foin and Longdon</h1>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of My Contacts page -->
+<div data-role="page" id="myContact" data-theme="b">
+
+	<div data-role="header">
+	<img src="IMG/HolstLogowhitetheme.png" class="holstlogo fadeInDown animated" width="100%">
+		<h1>Contact</h1>
+	</div><!-- /header -->
+<a href="https://twitter.com/intent/tweet?button_hashtag=HOLST&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="My day at the Holst Museum" data-related="HolstMuseum" data-show-count="false">Tweet #HOLST</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<div role="main" class="ui-content">
+		<a href="#popupCT5006" data-rel="popup" class="ui-btn ui-corner-all ui-shadow " data-transition="pop">Get in Touch</a>
+		<div data-role="popup" id="popupCT5006">
+            <center><h2>Call Us</h2>
+			<p>01242 524846</p>
+            <h2>Where to find us</h2>
+            <p>4 Clarence Road, Cheltenham GL52 2AY</p></center>
+		</div>
+		<a href="#popupCT5010" data-rel="popup" class="ui-btn ui-corner-all ui-shadow " data-transition="pop">Opening Hours</a>
+		<div data-role="popup" id="popupCT5010">
+			<p>Monday: Closed</p>
+			<p>Tuesday: 10am-4pm</p>
+			<p>Wednesday: 10am-4pm</p>
+            <p>Thursday: 10am-4pm</p>
+            <p>Friday: 10am-4pm</p>
+            <p>Saturday: 10am-4pm</p>
+            <p>Sunday: Closed</p>
+		</div>
+        <a href="#popupContactAdmissions" data-rel="popup" class="ui-btn ui-corner-all ui-shadow " data-transition="pop">Admissions</a>
+		<div data-role="popup" id="popupContactAdmissions">
+			<p>Adults: £6</p>
+		<p>Children (5-15): £2</p>
+		<p>Concessions: £5.50</p>
+		<p>Family ticket (2 adults and up to 3 children): £14</p>
+		<p>Group visits by appointment</p>
+		</div>
+        <center><h1>Send us a Message</h1></center>
+        <form id="cus" action="Contact.php" method="post" name="contact_form">
+            <input class="inputStyle" name="name" type="text" placeholder="Forename and Surname" required="">
+            <input class="inputStyle" name="email" type="text" placeholder="Email" required="">
+            <textarea class="inputStyle" name="message" placeholder="Message" required></textarea> 
+            <input class="buttons" type="submit" id="submit" value="Send email">
+        </form>
+            
+         
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of My Tour page -->
+<div data-role="page" id="myTour" data-theme="b">
+
+	<div data-role="header">
+	<img src="IMG/HolstLogowhitetheme.png" class="holstlogo fadeInDown animated" width="100%">
+		<h1>DigiTour</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<audio id="myAudio">
+<source src="bleep.wav" type="audio/mpeg">
+</audio>
+
+
+<center><button id="btn1" class="button1" width="10%" type="button" onclick="Ventoux()" >Ground Floor</button>
+
+<script>
+function Ventoux() {
+document.getElementById("myImg").src = "IMG/Floors/groundfloor.png";
+
+
+var x = document.getElementById("myAudio"); 
+x.play(); 
+} 
+</script>
+
+<button id="btn2" class="button2" type="button"  onclick="Blanc()">First Floor</button>
+
+<script>
+function Blanc() {
+document.getElementById("myImg").src = "IMG/Floors/firstfloor.png";
+
+
+var x = document.getElementById("myAudio"); 
+x.play(); 
+}
+</script>
+
+
+<button id="btn3" class="button3" type="button" onclick="Carlit()">Second Floor</button>
+
+<script>
+function Carlit() {
+document.getElementById("myImg").src = "IMG/Floors/secondfloor.png";
+
+
+var x = document.getElementById("myAudio"); 
+x.play(); 
+}
+</script>
+
+
+<button id="btn4" class="button4" type="button" onclick="Flr()">Basement</button></center>
+
+<script>
+function Flr() {
+document.getElementById("myImg").src = "IMG/Floors/basement.png";
+
+
+var x = document.getElementById("myAudio"); 
+x.play(); 
+}
+</script>
+
+        <center><img id="myImg" class="hudrender" src="IMG/Floors/firstfloor.png" width="90%"></center>
+        <br>
+        <div data-role="collapsible" id="collapsRoomInfo">
+			<h4>The Music Room</h4>
+			<h5>This room is where Holst's piano is held. The piano was installed at his home in Thaxted, Essex. He bought it in 1913, second-hand, for £12. This piano is one of the pianos which would have been used to compose 'The Planets'. 
+			</h5>
+		</div>
+		<div data-role="collapsible" id="collapsRoomInfo">
+			<h4>The Holst Discovery Space</h4>
+			<h5>Whilst this room was opened in 2013, it room enables visitors to find out more about the composer through digitized archive material presented on a touch screen and a page-turning kiosk.
+			</h5>
+		</div>
+		<div data-role="collapsible" id="collapsRoomInfo">
+			<h4>The Victorian Bedroom</h4>
+			<h5>It is possible that this is the room Gustav Holst was born in.. It is decorated in the style of the 1870s, with sombre furnishings.
+			</h5>
+		</div>
+		<div data-role="collapsible" id="collapsRoomInfo">
+			<h4>Late Regency Sitting Room</h4>
+			<h5>This room, being the largest first floor room, was probably the dining room, but is presented today as a Regency period sitting room.
+			</h5>
+		</div>
+		<div data-role="collapsible" id="collapsRoomInfo">
+			<h4>The Maid's Bedroom</h4>
+			<h5>To this day, we still know the names of the Holst maids - Clara Burrup and her successor Julia Giles.
+			</h5>
+		</div>
+		<div data-role="collapsible" id="collapsRoomInfo">
+			<h4>The Nursery</h4>
+			<h5>It is highly likely that Holst's parents had a nursery which may have had two nursemaids in charge of children's care.
+			</h5>
+		</div>
+		<div data-role="collapsible" id="collapsRoomInfo">
+			<h4>The Kitchen</h4>
+			<h5>This is an original Victorian kitchen containing a working kitchen range from a local Cheltenham property.
+			</h5>
+		</div>
+		<div data-role="collapsible" id="collapsRoomInfo">
+			<h4>The Larder</h4>
+			<h5>In order to keep food fresh, food was stored in the larder. This is as fridges and freezers did not yet exist.
+			</h5>
+		</div>
+		<div data-role="collapsible" id="collapsRoomInfo">
+			<h4>The Servant's Sitting Room</h4>
+			<h5>This was the room that the maid was allowed to rest in by the fire after having completed her long day of labour.
+			</h5>
+		</div>
+		<div data-role="collapsible" id="collapsRoomInfo">
+			<h4>The Butler's Pantry</h4>
+			<h5>This was a room used to store household items.
+			</h5>
+		</div>
+		<div data-role="collapsible" id="collapsRoomInfo">
+			<h4>The Scullery</h4>
+			<h5>This oom was for the 'dirty work'. It is where the washin gup would happen.
+			</h5>
+		</div>
+	</div><!-- /content -->
+<link rel="stylesheet" href="my-slider.css"/>
+<script src="ism-2.2.min.js"></script>
+<div class="ism-slider" data-transition_type="zoom" data-play_type="loop" data-image_fx="zoompan" id="my-slider">
+  <ol>
+    <li>
+      <img src="IMG/HOLST IMAGES/Piano.jpg">
+    </li>
+    <li>
+      <img src="IMG/HOLST IMAGES/Dining.jpg">
+    </li>
+    <li>
+      <img src="IMG/HOLST IMAGES/Top.jpg">
+    </li>
+    <li>
+      <img src="IMG/HOLST IMAGES/Study.jpg">
+    </li>
+    <li>
+      <img src="IMG/HOLST IMAGES/Kitchen.jpg">
+    </li>
+    <li>
+      <img src="IMG/HOLST IMAGES/Food.jpg">
+    </li>
+    <li>
+      <img src="IMG/HOLST IMAGES/Spare.jpg">
+    </li>
+    <li>
+      <img src="IMG/HOLST IMAGES/Laundry.jpg">
+    </li>
+    <li>
+      <img src="IMG/HOLST IMAGES/Bed.jpg">
+    </li>
+    <li>
+      <img src="IMG/HOLST IMAGES/Bedroom.jpg">
+    </li>
+  </ol>
+</div>
+
+
+	<div data-role="footer">
+		
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="myMap" data-theme="b">
+
+	<div data-role="header">
+	<img src="IMG/HolstLogowhitetheme.png" class="holstlogo fadeInDown animated" width="100%">
+		<h1>Map</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		 <audio id="audiofile" controls preload="auto" autobuffer> 
+			<source src="AUDIO/2. The Rotunda - Intermezzo.mp3" />
+			<source src="AUDIO/4. Statue of Gustav Holst by Anthony Stones - Mars.mp3" />
+			<source src="AUDIO/5. Cheltenham Town Hall - Egdon Heath.mp3" />
+			<source src="AUDIO/6. 1 Vittoria Walk - Introduction and Bolero.mp3" />
+			<source src="AUDIO/7. 6 Montpellier Villas - Ave Maria.mp3" />
+			<source src="AUDIO/8. 45 Bath Road (Oxford House) - The Cotswolds Symphony.mp3" />
+			<source src="AUDIO/10. Lloyds Bank High Street (Assembly Rooms) - New Year Chorus.mp3" />
+			<source src="AUDIO/11. M&S (Cheltenham Corn Exchange) - Holst Country Dance.mp3" />
+			<source src="AUDIO/12. Cheltenham Chapel - Song of the Shipbuilders.mp3" />
+			<source src="AUDIO/13. All Saints Church - Funeral March.mp3" />
+			<source src="AUDIO/14. Holst Birthplace Museum - The Planets.mp3" />
+		</audio>
+		 <div id="map">		 	 	
+		 	
+		 </div>
+		 <script>
+		 audioelement = document.getElementById('audiofile');
+	  
+	  <a href="#" id="audiolink">Show audio player</a>
+	  
+	  // Handle audio playback
+			function handleAudio(e) 
+			{
+				var targ = e.target,
+					audio;
+				
+				if (targ.id === 'audiolink') 
+				{
+					// A copy of the <audio> element hidden in the page
+					audio = audioelement.cloneNode(true);
+					
+					// Removed the link and replaced with an audio tag
+					targ.parentNode.replaceChild(audio, targ);
+					audio.style.display = 'block';
+					
+					if (whichPrefix !== false) 
+                    {
+						audio.style[whichPrefix + 'Transform'] = 'translate(0, 0)';
+					}
+					
+					// Bind Event Delegation to links
+			document.body.addEventListener('click', handleAudio, false);
+					
+		</script>
+		 <div data-role="collapsible" id="collapsHolstInfo">
+			<h4>1.	16 Rotunda Terrace </h4>
+			<h5>Gustavus and his family are listed in the 1861 census as living here. The family consisted of Gustavus, Honoria, Adolphus, Lorenz, Matthias, Nina and Katherine. 
+				It is likely that the house was also a shop where Gustavus dealt in harps.  
+				Gustavus brought up all his children to be musicians. His daughter Kate also taught at the Ladies’ College. His son Matthias was a renowned concert pianist and also apparently a heartthrob who went to a fancy dress party naked. Gustavus’ other son, Adolphus (Adolph) was also a talented musician. Adolph was well known in Cheltenham for being a concert pianist and also for organising concerts in a range of venues across the town. He was also the organist at All Saints’ Church in Cheltenham. 
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/1. 16 Rotunda Terrace - HARP - RECORDING" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+		
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>2.	The Rotunda </h4>
+			<h5>The Rotunda was built as a pump room for taking the famous Cheltenham spa waters. It was also used as a concert venue with both Adolph and Gustav performing there. In 1891 the 
+				first performance was given of two juvenile works by the 16 year old Gustav Holst. They were listed in the programme as Scherzo and Intermezzo. The pieces were never published and the original autograph manuscripts are now in the Holst Birthplace Museum archives.
+			</h5>
+		</div>
+		<audio controls>
+  <source src="AUDIO/2. The Rotunda - Intermezzo.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+		</audio>
+	
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>3.	5 Queen’s Circus </h4>
+			<h5>Before Gustavus von Holst lived with his family at 16 Rotunda Terrace, he lived at 5 Queen’s Circus. He wrote a letter in 1853 from 5 Queen’s Circus accepting the position as Professor of Music at Cheltenham Ladies College. This letter is now in the archives at the Cheltenham Ladies College archives.  He describes in the letter how he is able to supply ‘first rate’ instruments (pianofortes etc) for purchase ‘which can be seen at my residence here where I have several.’ 
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/3. 5 Queen’s Circus - HARP - RECORDING" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+		
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>4.	Statue of Gustav Holst by Anthony Stones </h4>
+			<h5>In 2008 Cheltenham Civic Society raised money to erect a statue to Gustav Holst, Cheltenham’s most famous son. The sculptor was Anthony Stones and it was cast at Pangolin Editions in Chalford, Stroud.
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/4. Statue of Gustav Holst by Anthony Stones - Mars.mp3" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+			
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>5.	Cheltenham Town Hall </h4>
+			<h5>When Cheltenham’s main concert venue, the Assembly Rooms were demolished, Cheltenham Town Hall was built to provide a new venue for balls and concerts. Built in 1902-03, the Town Hall played an important part in the career and musical legacy of Gustav Holst. In 1927 it hosted the Holst Festival where Holst conducted The Planets. Holst later said the occasion was the most overwhelming event of his life. As well as the Holst Festival the Town Hall also hosted the British premiere of what Holst considered his best work, Egdon Heath in 1928. 
+
+			Today Cheltenham Town Hall remains a venue where Holst’s music is often performed, for example in recent years there have been performances there of The Planets, Savitri and Beni Mora. 
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/5. Cheltenham Town Hall - Egdon Heath.mp3" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+		
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>6.	1 Vittoria Walk </h4>
+			<h5>1 Vittoria Walk, the house where the 7 year old Gustav Holst moved to with his father and brother after his mother died no longer stands. It is now the site of a BT Building. However in the 1891 census, Adolph and his family are listed as living here with Adolph’s second wife Mary Thorley Stone. Adolph is listed as teacher of piano and an organist. Gustav is listed as 16 and a ‘scholar’. His brother Emil, 14 is also listed as a ‘scholar’. At this point Gustav had two half-brothers, Matthias and Thorley, 4 and 1. At that time there were two live in servants: Sarah A Snow, aged 27, a cook born in Cheltenham, and Matilda Dickenson, aged 16, the children’s nurse, born in Notgrove, Gloucestershire. 
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/6. 1 Vittoria Walk - Introduction and Bolero.mp3" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+			
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>7.	6 Montpellier Villas </h4>
+			<h5>In 1871 Adolph von Holst married Clara Lediard. When Clara met Adolph she lived with her widowed mother and sisters at 4 Pittville Terrace, now the Holst Birthplace Museum. The Lediard family were originally from Cirencester. Clara had been Adolph’s piano pupil. According to the Cheltenham Annuaire, a town directory, the newly married couple moved to this house. They lived here until 1874, just a few months before Gustav was born. 
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/7. 6 Montpellier Villas - Ave Maria.mp3" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+			
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>8.	45 Bath Road, ‘Oxford House’ </h4>
+			<h5>In the 1901 census Adolph is listed as living in lodgings in this house. By this point in his life he was separated from his second wife who had emigrated to America. Gustav was now in London, having written several notable compositions including The Cotswold Symphony in 1900. Adolph died in this house following a visit to what is now The Montpellier Wine Bar. 
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/8. 45 Bath Road (Oxford House) - The Cotswolds Symphony.mp3" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+			
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>9.	16 Cambray </h4>
+			<h5>Gustavus and Adolph lived here together in 1870. This is where Gustavus is listed as living when he died in 1870. At this point his wife Honoria had died and his children Matthias and Katherine were living in Glasgow as music teachers.
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/9. 16 Cambray - HARP - RECORDING" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+			
+			
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>10.	 Lloyds Bank, High Street, site of the Assembly Rooms </h4>
+			<h5>The present building is on the site of Cheltenham’s Assembly Rooms, one of the town’s former concert halls. Adolph von Holst, Gustav’s father, organised concerts and performed here. Gustav himself also conducted sections from his Lansdown Castle here on 22nd December 1892.’
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/10. Lloyds Bank High Street (Assembly Rooms) - New Year Chorus.mp3" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+			
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>11.	 Marks and Spencer, site of Cheltenham Corn Exchange </h4>
+			<h5>Holst conducted his work Lansdown Castle in full at the Corn Exchange. This work was part of an unsuccessful scholarship application to the Royal College of Music. In 1893, after passing the entrance exams, he borrowed £100 from his father and left Cheltenham for London. 
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/11. M&S (Cheltenham Corn Exchange) - Holst Country Dance.mp3" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+			
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>12.	 Cheltenham Chapel </h4>
+			<h5>inside Cheltenham Chapel due to a new school building being built. Holst was apparently teased at school for not being very good at sport, earning the nickname, ‘Sausage.’ 
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/12. Cheltenham Chapel - Song of the Shipbuilders.mp3" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+			
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>13.	 All Saints Church </h4>
+			<h5>Adolph von Holst (1846-1901), Gustav Holst’s father was the first organist of All Saints Church. He and his wife Clara Lediard were married here in 1871, and both their sons, Gustav and Emil, were baptised here. Gustav sang in the choir and would also have played the organ, possibly to help him compose his early organ works. 
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/13. All Saints Church - Funeral March.mp3" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+			
+		<div data-role="collapsible" id="collapsHolstInfo">
+			<h4>Finish! Holst Birthplace Museum </h4>
+			<h5>Gustav Holst was born in this house in 1874. When he was only 7 years old his mother died and he left the house with his father and brother to live at 1 Vittoria Walk.
+			</h5>
+		</div>
+		<audio controls>
+  				<source src="AUDIO/14. Holst Birthplace Museum - The Planets.mp3" type="audio/mpeg">
+  				Your browser does not support the audio tag.
+			</audio>
+			
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+	
+	
+<div data-role="page" id="mySocial" data-theme="b">
+
+	<div data-role="header">
+	<img src="IMG/HolstLogowhitetheme.png" class="holstlogo fadeInDown animated" width="100%">
+		<h1>Social Media</h1>
+	</div><!-- /header -->
+	<a href="https://twitter.com/intent/tweet?button_hashtag=HOLST&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="My day at the Holst Museum" data-related="HolstMuseum" data-show-count="false">Tweet #HOLST</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<br><center><h1>Find us on Facebook</h1></center><br>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	
+	<center><div class="fb-page" data-href="https://www.facebook.com/HolstMuseum/" data-tabs="timeline, events, messages" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/HolstMuseum/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/HolstMuseum/">Holst Birthplace Museum</a></blockquote></div></center>
+            
+        <br><center><h1>Follow us on Twitter</h1></center><br>
+            <a class="twitter-timeline" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/HolstMuseum?ref_src=twsrc%5Etfw">Tweets by HolstMuseum</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	
+
+	<div role="main" class="ui-content">
+		 
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+	
+	
+<div data-role="page" id="myAbout" data-theme="b">
+
+	<div data-role="header">
+	<img src="IMG/HolstLogowhitetheme.png" class="holstlogo fadeInDown animated" width="100%">
+		<h1>About Holst</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<a href="#popupAdmissions1" data-rel="popup" class="ui-btn ui-corner-all ui-shadow " data-transition="pop">Get in Touch</a>
+		<div data-role="popup" id="popupAdmissions1">
+            <center><h2>Call Us</h2>
+			<p>01242 524846</p>
+            <h2>Where to find us</h2>
+            <p>4 Clarence Road, Cheltenham GL52 2AY</p></center>
+		</div>
+		<a href="#popupAdmissions2" data-rel="popup" class="ui-btn ui-corner-all ui-shadow " data-transition="pop">Opening Hours</a>
+		<div data-role="popup" id="popupAdmissions2">
+			<p>Monday: Closed</p>
+			<p>Tuesday: 10am-4pm</p>
+			<p>Wednesday: 10am-4pm</p>
+            <p>Thursday: 10am-4pm</p>
+            <p>Friday: 10am-4pm</p>
+            <p>Saturday: 10am-4pm</p>
+            <p>Sunday: Closed</p>
+		</div>
+        <a href="#popupAdmissions3" data-rel="popup" class="ui-btn ui-corner-all ui-shadow " data-transition="pop">Admissions</a>
+		<div data-role="popup" id="popupAdmissions3">
+			<p>Adults: £6</p>
+		<p>Children (5-15): £2</p>
+		<p>Concessions: £5.50</p>
+		<p>Family ticket (2 adults and up to 3 children): £14</p>
+		<p>Group visits by appointment</p>
+		</div>
+		 <center><h3>Gustav Holst, composer of The Planets, was born in this Regency house in 1874. The Museum was set up in 1975 to celebrate Cheltenham’s most famous son and also to offer a glimpse into what life was like for an ordinary 19th century family living in the town. Step back in time as you wander through its historic rooms, including Holst’s Victorian bedroom, nursery, kitchen and scullery. Imagine Cheltenham’s Regency past in the only Regency room open to the public in the town, complete with hand blocked wallpaper, fine furnishings and 19th century art collection. See and listen to the piano Holst used to compose The Planets in a recreation of his music room. Delve deeper into his life in the Holst Discovery Space, through archives and film. Drop into the Learning Space for one of our regular family activities.
+		 
+             We are a small, independent museum governed by the Holst Birthplace Trust, registered charity number: 1078599.</h3></center>
+ 		<h7>Site Created and Developed by James Longdon and Nathan Foin, 2018.</h7>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<script src="index.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwG32w9ZoEiyKGIwDQW9RvZpAkLsJSSwE&callback=showMap" type="text/javascript"></script>
+
+
 </body>
+	
 
 </html>

@@ -1,0 +1,142 @@
+/* Scss Document */
+/* Css Document */
+@import url('https://fonts.googleapis.com/css?family=Josefin Slab');
+
+holstlogo {
+    
+}
+
+.ui-header {
+    background-color: #333333 !important;
+    
+}
+
+.holstportrait {
+    border-radius: 50% !important;
+}
+
+h1 {
+    
+    font-family: Josefin Slab;
+    font-weight: Bold;
+    font-size: 25px !important;
+   /* color: #505f77; This font colour is for the light theme*/
+    color: #fff; /* This font colour is for the dark theme */
+    
+}
+
+h2 {
+    
+    font-family: Josefin Slab;
+    font-weight: Bold;
+    font-size: 20px !important;
+    color: #22aadd; 
+}
+
+h3 {
+    
+    font-size: 21px !important;
+    color: #fff;
+    background-color: #232323 !important;
+    border-radius: 9px !important;
+    border: 5px solid #232323;
+    
+}
+
+h4 {
+    top: 10px;
+    font-family: Josefin Slab !important;
+    font-weight: Bold;
+    font-size: 25px !important;
+    color: #505f77;
+    
+}
+
+h5 {
+     font-size: 21px !important;
+    color: #fff;
+}
+
+h6 {
+     font-size: 10px !important;
+    color: #fff;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+
+.ui-page { 
+    background:#505f77;
+}
+
+p {
+    
+}
+
+.ui-footer {
+    bottom:0px;
+}
+
+#map {
+		width: 100%;
+		height: 600px;
+	}
+
+.ui-content {
+ top: 10px;
+    font-family: Josefin Slab !important;
+    font-weight: Bold;
+    font-size: 25px !important;
+    color: #505f77;
+}
+
+h7 {
+    
+    font-family: Josefin Slab;
+    font-weight: normal;
+    font-size: 8px !important;
+   /* color: #505f77; This font colour is for the light theme*/
+    color: #fff; /* This font colour is for the dark theme */
+    
+}
+
+
+.button1 {
+font-family:"Josefin Slab" !important;
+font-size: 20px !important;
+color: #fff !important;
+background-color: #232323 !important;
+border-radius: 9px !important;
+
+}
+
+
+.button2 {
+font-family:"Josefin Slab" !important;
+font-size: 20px !important;
+color: #fff !important;
+background-color: #232323 !important;
+border-radius: 9px !important;
+
+}
+
+
+.button3 {
+font-family:"Josefin Slab" !important;
+font-size: 20px !important;
+color: #fff !important;
+background-color: #232323 !important;
+border-radius: 9px !important;
+
+}
+
+	
+.button4 {
+font-family:"Do Hyeon" !important;
+font-size: 20px !important;
+color: #fff !important;
+background-color: #232323!important;
+border-radius: 9px !important;
+
+}
+
+	
